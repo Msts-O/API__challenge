@@ -27,7 +27,7 @@ module APIChallenge
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.generators do |g|     #自動でのファイル作成防止
+    config.generators do |g|
       g.test_framework :rspec
     end
 
