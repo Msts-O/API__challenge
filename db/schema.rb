@@ -13,8 +13,8 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20_201_122_053_349) do
-  create_table 'posts', options:
-      'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci', force: :cascade do |t|
+  create_table 'posts',
+               options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci', force: :cascade do |t|
     t.string 'title', null: false, comment: '投稿内容'
     t.text 'content', null: false
     t.string 'name', null: false
