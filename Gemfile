@@ -45,4 +45,5 @@ end
 gem 'factory_bot', '~> 6.1'
 gem 'rspec', '~> 3.10'
 gem 'rubocop', '~> 1.3', '>= 1.3.1'
+gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
