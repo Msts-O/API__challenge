@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :post do
-    title   { 'testtest' }
+    title   { 'test' }
     name    { '佐藤太郎' }
     content { 'テスト書いてます。' }
   end
