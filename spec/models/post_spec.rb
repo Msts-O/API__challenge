@@ -13,7 +13,7 @@ RSpec.describe Post, type: :model do
       expect(@post).to be_valid
     end
   end
-  describe '新規登録が出来ないケース' do
+  describe '新規登録不可' do
     context '新規登録が出来ない時'
     it 'titleが空で登録が出来ない時' do
       @post.title = nil

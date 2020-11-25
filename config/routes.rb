@@ -9,6 +9,6 @@ Rails.application.routes.draw do
         get 'comment/:id', to: 'comments#show'
         delete 'comment/:id/', to: 'comments#destroy'
       end
-     end
     end
+  end
 end

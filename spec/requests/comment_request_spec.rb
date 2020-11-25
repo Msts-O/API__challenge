@@ -1,33 +1,33 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "Comments", type: :request do
-
-  describe "GET /create" do
-    it "returns http success" do
-      get "/comment/create"
+RSpec.describe 'Comments', type: :request do
+  describe 'GET /create' do
+    it 'returns http success' do
+      get '/comment/create'
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET /update" do
-    it "returns http success" do
-      get "/comment/update"
+  describe 'GET /update' do
+    it 'returns http success' do
+      get '/comment/update'
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET /destroy" do
-    it "returns http success" do
-      get "/comment/destroy"
+  describe 'GET /destroy' do
+    it 'returns http success' do
+      get '/comment/destroy'
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET /show" do
-    it "returns http success" do
-      get "/comment/show"
+  describe 'GET /show' do
+    it 'returns http success' do
+      get '/comment/show'
       expect(response).to have_http_status(:success)
     end
   end
-
 end
