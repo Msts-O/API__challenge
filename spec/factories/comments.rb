@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :comment do
-    name { 'MyString' }
-    content { 'MyText' }
+    name { '山田一郎' }
+    content { 'あいうえお' }
   end
 end
