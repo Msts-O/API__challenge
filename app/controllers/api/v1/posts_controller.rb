@@ -9,6 +9,13 @@ module Api
         @posts = Post.all
       end
 
+      def search
+        @posts= Post.all
+        respond_to do |format|
+         format.json
+        end
+      end
+
       def create
         @post = Post.new(post_params)
         if @post.save
