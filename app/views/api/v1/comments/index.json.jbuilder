@@ -1,6 +1,4 @@
 
-json.array! @posts do |post|
-  json.(post, :title, :content, :name)
+json.array! @comments do |comment|
+  json.(comment,:content, :name)
 end
-
-
