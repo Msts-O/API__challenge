@@ -16756,7 +16756,7 @@
     <comment xml:lang="ca">índex d'Usenet NewzBin</comment>
     <comment xml:lang="cs">index NewzBin diskuzních skupin Usenet</comment>
     <comment xml:lang="da">NewzBin-brugernetindex</comment>
-    <comment xml:lang="de">NewzBin-Usenet-Index</comment>
+    <comment xml:lang="de">NewzBin-Usenet-App</comment>
     <comment xml:lang="el">Ευρετήριο usenet NewzBin</comment>
     <comment xml:lang="en_GB">NewzBin usenet index</comment>
     <comment xml:lang="es">índice NewzBin de usenet</comment>
@@ -16780,7 +16780,7 @@
     <comment xml:lang="pt">índice usenet NewzBin</comment>
     <comment xml:lang="pt_BR">Índice de usenet NewzBin</comment>
     <comment xml:lang="ru">Индекс usenet NewzBin</comment>
-    <comment xml:lang="sk">Index Usenetu NewzBin</comment>
+    <comment xml:lang="sk">App Usenetu NewzBin</comment>
     <comment xml:lang="sl">Kazalo usenet NewzBin</comment>
     <comment xml:lang="sr">Њузбин попис јузнета</comment>
     <comment xml:lang="sv">NewzBin-usenetindex</comment>
@@ -35681,7 +35681,7 @@
       <match value="Only in\t" type="string" offset="0"/>
       <match value="Only in " type="string" offset="0"/>
       <match value="Common subdirectories: " type="string" offset="0"/>
-      <match value="Index:" type="string" offset="0"/>
+      <match value="App:" type="string" offset="0"/>
     </magic>
     <glob pattern="*.diff"/>
     <glob pattern="*.patch"/>

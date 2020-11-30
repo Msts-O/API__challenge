@@ -183,12 +183,12 @@ Then `alpha.js` will be loaded before either of the other two. This can be a pro
 
 Or you can use index files to proxy your folders.
 
-### Index files are proxies for folders
+### App files are proxies for folders
 
-In Sprockets index files such as `index.js` or `index.css` files inside of a folder will generate a file with the folder's name. So if you have a `foo/index.js` file it will compile down to `foo.js`. This is similar to NPM's behavior of using [folders as modules](https://nodejs.org/api/modules.html#modules_folders_as_modules). It is also somewhat similar to the way that a file in `public/my_folder/index.html` can be reached by a request to `/my_folder`. This means that you cannot directly use an index file. For example this would not work:
+In Sprockets index files such as `App.jsx` or `index.css` files inside of a folder will generate a file with the folder's name. So if you have a `foo/App.jsx` file it will compile down to `foo.js`. This is similar to NPM's behavior of using [folders as modules](https://nodejs.org/api/modules.html#modules_folders_as_modules). It is also somewhat similar to the way that a file in `public/my_folder/index.html` can be reached by a request to `/my_folder`. This means that you cannot directly use an index file. For example this would not work:
 
 ```erb
-<%= asset_path("foo/index.js") %>
+<%= asset_path("foo/App.jsx") %>
 ```
 
 Instead you would need to use:
@@ -211,7 +211,7 @@ For example, if you have an `application.js` and want all the files in the `foo/
 //= require foo.js
 ```
 
-Then create a file `foo/index.js` that requires all the files in that folder in any order you want using relative references:
+Then create a file `foo/App.jsx` that requires all the files in that folder in any order you want using relative references:
 
 ```js
 //= require ./foo.min.js
@@ -352,7 +352,7 @@ var a = "A";
 var b = "B";
 ```
 
-You can also see [Index files are proxies for folders](#index-files-are-proxies-for-folders) for another method of organizing folders that will give you more control.
+You can also see [App files are proxies for folders](#index-files-are-proxies-for-folders) for another method of organizing folders that will give you more control.
 
 ### require_tree
 
