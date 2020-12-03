@@ -12,12 +12,10 @@ class Create extends Component {
     }
 
     handleInputValue = (event) => {
-        const field = event.target.name;
         /*  eslint-disable-next-line */
-        this.state[field] = event.target.value;
         this.setState({
-            [field]: this.state[field]
-        });
+            [event.target.name]: event.target.value
+        })
     }
 
     handleSubmit = () => {
@@ -41,7 +39,6 @@ class Create extends Component {
             <div>
                 <p>新規投稿</p>
                 <div>
-                    <form onSubmit={this.handleSubmit}>
                         <label>投稿内容 : </label>
                         <input type="text" name="post" value={ name } onChange={ this.handleInputValue } />
                         <label>タイトル:</label>
@@ -49,7 +46,6 @@ class Create extends Component {
                         <label>内容: </label>
                         <textarea name="content" value={ content } onChange={ this.handleInputValue } />
                         <input type="submit" value="Submit" />
-                    </form>
                 </div>
             </div>
         );
