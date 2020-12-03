@@ -5,30 +5,28 @@ class Create extends Component {
     constructor(props){
         super(props);
         this.state = {
-            name: '',
-            neko_style: ''
+            post: '',
+            title: '',
+            content: ''
         };
     }
 
     handleInputValue = (event) => {
+        /*  eslint-disable-next-line */
         this.setState({
-            // setStateメソッドで更新するstateと新しいstateの値を指定する
             [event.target.name]: event.target.value
-            // フォームのname="neko_type"のnameを参照
-            // this.setState({title: event.target.value})と同じ書き方となる
-        });
+        })
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleSubmit = () => {
         axios({
             method : "POST",
-            url : "http://localhost:3001/api/v1/posts",
-            data : { name: this.state.name, content: this.state.content }
+            url : "http://localhost:3000/create",
+            data : { post: this.state.post, title: this.state.title,content: this.state.content }
         })
             .then((response)=> {
                 console.log(this.props)
-                this.props.history.push('/api/v1/posts');
+                this.props.history.push('/');
             })
             .catch((error)=> {
                 console.error(error);
@@ -36,16 +34,18 @@ class Create extends Component {
     }
 
     render() {
-        const { name,content } = this.state;
+        const { name,title, content } = this.state;
         return (
             <div>
                 <p>新規投稿</p>
                 <div>
-                    <label>名前 : </label>
-                    <input type="text" name="name" value={ name } onChange={ this.handleInputValue } />
-                    <label>猫種 : </label>
-                    <input type='text' name="content" value={ content } onChange={ this.handleInputValue } />
-                    <input type="button" onClick={this.handleSubmit} value="Submit" />
+                        <label>投稿内容 : </label>
+                        <input type="text" name="post" value={ name } onChange={ this.handleInputValue } />
+                        <label>タイトル:</label>
+                        <input type="text" name="title" value={ title } onChange={this.handleInputValue} />
+                        <label>内容: </label>
+                        <textarea name="content" value={ content } onChange={ this.handleInputValue } />
+                        <input type="submit" value="Submit" />
                 </div>
             </div>
         );
