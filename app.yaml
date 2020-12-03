@@ -1,0 +1,6 @@
+entrypoint: bundle exec rails server Puma -p $PORT
+env: flex
+runtime: ruby
+includes:
+  - secret.yaml
+service: bbs_api

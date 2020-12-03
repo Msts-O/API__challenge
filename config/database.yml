@@ -52,3 +52,4 @@ production:
   database: API__challenge_production
   username: API__challenge
   password: <%= ENV['API__CHALLENGE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
