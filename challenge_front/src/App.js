@@ -1,31 +1,36 @@
-import React from 'react';
-import Index from './Components/Index';
-import Create from './Components/Create';
+import React, { Component } from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import axios from 'axios'
 
-// const App = () => {
-//     return(
-//         <Router>
-//         <div id="App">
-//         <Header />
-//         <Switch>
-//         <Route exact path='/index' Components={ Index }/>
-//     <Route exact path='/create' Components={ Create } />
-//     </Switch>
-//     </div>
-//     </Router>
-// );
-// }
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: true
+        };
+    }
 
-class App extends React . Component{
-  render(){
-        return(
-     <div>
-    <Link to="/index" >投稿一覧</Link>
-    <Link to="/create" >新規投稿</Link>
-    </div>
-  )
- }
+    componentDidMount(){
+         axios.get("http://localhost:3001/api/v1/posts")
+              .then(response =>{
+              console.log(response)
+              this.setState({posts: response.data})
+             })
+              .catch(error =>{
+              console.log(error)
+             })
+      }
+    render() {
+       const { posts } = this.state
+       return(
+         <div>
+           List of posts
+        {
+          posts&&posts.map(post => <div key={post.id}>{post.title},{post.content}</div>)
+        }
+         </div>
+       )
+    }
 }
-export default App;
+
+    export default App;
