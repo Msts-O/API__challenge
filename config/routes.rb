@@ -1,6 +1,7 @@
+# frozen_string_literal: true
 
 Rails.application.routes.draw do
-  namespace :api,  format: 'json' do
+  namespace :api, format: 'json' do
     namespace :v1 do
       resources :posts, except: %i[edit] do
         post 'comments', to: 'comments#create'
@@ -9,5 +10,5 @@ Rails.application.routes.draw do
         delete 'comment/:id/', to: 'comments#destroy'
       end
     end
-   end
- end
+  end
+end

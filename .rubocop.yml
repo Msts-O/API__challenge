@@ -4,3 +4,9 @@ Documentation:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
+
+Metrics/LineLength:
+  Max: 160
+  Exclude:
+    - "db/migrate/*.rb"
+    - "db/schema/*.rb"

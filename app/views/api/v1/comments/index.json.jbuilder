@@ -1,4 +1,5 @@
+# frozen_string_literal: true
 
 json.array! @comments do |comment|
-  json.(comment,:content, :name)
+  json.call(comment, :content, :name)
 end
