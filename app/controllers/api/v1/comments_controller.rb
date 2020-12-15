@@ -3,13 +3,13 @@
 module Api
   module V1
     class CommentsController < ApplicationController
-
       def search
-        @comments= Comment.all
+        @comments = Comment.all
         respond_to do |format|
           format.json
+        end
       end
-     end
+
       def create
         @comment = Comment.new(comment_params)
         if @comment.save
@@ -47,5 +47,5 @@ module Api
         params.permit(:name, :content, :post_id)
       end
     end
-   end
   end
+end

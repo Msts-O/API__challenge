@@ -10,9 +10,9 @@ module Api
       end
 
       def search
-        @posts= Post.all
+        @posts = Post.all
         respond_to do |format|
-         format.json
+          format.json
         end
       end
 

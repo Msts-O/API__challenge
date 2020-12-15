@@ -45,7 +45,12 @@ jobs:
       DB_PASSWORD: 'root'
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
+        environment:
+          - RAILS_ENV: 'test'
       - image: circleci/mysql:5.7
+        environment:
+          - MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+          - MYSQL_ROOT_HOST: '%'
     steps:
       - checkout
       - *restore_gem_cache
