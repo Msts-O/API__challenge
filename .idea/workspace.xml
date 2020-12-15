@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f61fad2-96e3-44af-baa8-51c9bd40e742" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -80,16 +80,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="108">
+              <caret line="15" column="104" selection-start-line="15" selection-start-column="104" selection-end-line="15" selection-end-column="104" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-298">
@@ -101,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.rubocop.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="165">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/challenge_front/src/components/PostModal.js" />
         <option value="$PROJECT_DIR$/challenge_front/src/App.js" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
-        <option value="$PROJECT_DIR$/.rubocop.yml" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/.rubocop.yml" />
       </list>
     </option>
   </component>
@@ -364,17 +364,18 @@
       <workItem from="1607774852642" duration="2407000" />
       <workItem from="1607909902636" duration="6164000" />
       <workItem from="1607921425162" duration="3081000" />
-      <workItem from="1608003324275" duration="3844000" />
+      <workItem from="1608003324275" duration="4558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120902000" />
+    <option name="totallyTimeSpent" value="121616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.22532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8435374" visible="true" weight="0.22532189" />
       <window_info id="Structure" order="1" sideWeight="0.50119334" side_tool="true" weight="0.22389127" />
       <window_info id="Favorites" order="2" sideWeight="0.15646258" side_tool="true" weight="0.08798283" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,7 +388,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43821657" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43821657" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -612,10 +613,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="104" selection-start-line="15" selection-start-column="104" selection-end-line="15" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.rubocop.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -623,13 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-298">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
