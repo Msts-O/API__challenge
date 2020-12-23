@@ -5758,7 +5758,7 @@ From the old ChangeLog.libffi-3.1 file...
 2000-12-09  Richard Henderson  <rth@redhat.com>
 
 	* src/alpha/ffi.c (ffi_call): Simplify struct return test.
-	(ffi_closure_osf_inner): App rather than increment avalue
+	(ffi_closure_osf_inner): Index rather than increment avalue
 	and arg_types.  Give ffi_closure_osf the raw return value type.
 	* src/alpha/osf.S (ffi_closure_osf): Handle return value type
 	promotion.
