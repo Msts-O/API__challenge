@@ -11,6 +11,14 @@ function CreateForm(props) {
         <Grid container>
     <Grid item xs={12}>
         <TextField
+    label="name"
+    id="name"
+    value={props.inputs["title"]}
+    onChange={(e) => props.onChange("title", e)}
+    />
+    </Grid>
+    <Grid item xs={12}>
+        <TextField
     label="title"
     id="title"
     value={props.inputs["title"]}
